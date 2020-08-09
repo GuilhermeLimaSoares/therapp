@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    display: block;
+    height: 100%;
+    border-width: 0px 1px;
+    padding: 0px 15px;
+    box-shadow: 0px 0px 15px #403737;
+
+    &-title {
+        line-height: 100px;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        margin: 0;
+    }
+
+    .list {
+        list-style-type: none;
+
+        &__item {
+            padding: 0px 0px 0px 15%;
+            line-height: 100px;
+        }
+    }
+
+    .item {
+        // display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #444;
+       
+    }
+}

@@ -5,11 +5,11 @@ import './../../assets/styles/global.scss';
 
 import Sidebar from './../../components/Sidebar';
 
-export default function Calendar(){
+export default function Patients(){
     return (
     <div className="container">
         <Sidebar/>
-        <h1>Calendar</h1>
+        <h1>Patients</h1>
         
 
     </div>)

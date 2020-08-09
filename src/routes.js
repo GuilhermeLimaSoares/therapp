@@ -1,16 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 
-// import Landing from './pages/Landing';
-// import TeacherList from './pages/TeacherList';
-// import TeacherForm from './pages/TeacherForm';
+import Home from './pages/Home';
+import Patients from './pages/Patients';
+import Calendar from './pages/Calendar';
+import FollowUp from './pages/FollowUp';
+import Configuration from './pages/Configuration';
 
 function Routes(){
     return (
         <BrowserRouter>
-            {/* <Route path="/" exact component={Landing} />
-            <Route path="/study" component={TeacherList} />
-            <Route path="/give-classes" component={TeacherForm} /> */}
+            <Route path="/" exact component={Home} />
+            <Route path="/Meus-Pacientes" component={Patients} />
+            <Route path="/Caledario" component={Calendar} />
+            <Route path="/Acompanhamento" component={FollowUp} />
+            <Route path="/Configuracoes" component={Configuration} />
         </BrowserRouter>
     )
 }

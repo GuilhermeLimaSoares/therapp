@@ -4,12 +4,16 @@ import './styles.scss';
 import './../../assets/styles/global.scss';
 
 import Sidebar from './../../components/Sidebar';
+import Task from './../../components/Task';
 
-export default function Calendar(){
+export default function Home(){
     return (
     <div className="container">
         <Sidebar/>
-        <h1>Calendar</h1>
+        <main className="main">
+            <Task />
+        </main>
+      
         
 
     </div>)
