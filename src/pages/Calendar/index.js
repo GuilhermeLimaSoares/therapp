@@ -4,13 +4,18 @@ import './styles.scss';
 import './../../assets/styles/global.scss';
 
 import Sidebar from './../../components/Sidebar';
+import PageHeader from './../../components/PageHeader';
+
+import '../../assets/utils/index';
 
 export default function Calendar(){
     return (
     <div className="container">
+        <PageHeader />
         <Sidebar/>
-        <h1>Calendar</h1>
-        
+        <main className="main">
+            <h1>Calendar</h1>
+        </main>
 
     </div>)
 }

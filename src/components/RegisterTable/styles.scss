@@ -1,0 +1,47 @@
+.register {
+    border-radius: 5px;
+    border: 1px solid;
+    min-height: 200px;
+    display: grid;
+    padding: 0px 15px 20px 15px;
+
+    &-tag {
+      height: max-content;
+        padding: 2%;
+        margin: 0 2%;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #c54ac5;
+        position: relative;
+        bottom: 15px;
+        box-shadow: 0px 0px 4px #948e8e;
+
+
+    }
+
+    &-table {
+        display: grid;
+        margin: 0 2%;
+
+        &-title {
+            color: #c54ac5;
+        }
+
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .table-cell {
+                display: flex;
+                padding: 10px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .register {
+        font-size: 60%;
+    }
+}

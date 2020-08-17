@@ -1,0 +1,50 @@
+.note {
+    border: 1px black;
+    border-radius: 5px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0px 0px 3px #403737;
+    margin: 0px 25px 0px 0px;
+    padding: 0px 10px;
+
+    &-tag {
+        position: absolute;
+        margin: -15px 0px 0px 15px;
+        width: 90px;
+        height: 90px;
+        background-color: red;
+        border-radius: 5px;
+    }
+
+    &-text-box {
+        display: grid;
+        grid-template-rows: 20% 40% 40%;
+        height: 100%;
+    }
+
+    &-title {
+        text-align: end;
+        opacity: 0.2;
+        display: grid;
+        align-items: end;
+    }
+
+    &-subtitle {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    &-detail {
+        text-align: left;
+        align-items: center;
+        display: grid;
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+    }
+}
+
+@media (max-width: 1000px){
+    .note {
+        width: 90vw;
+    }
+}

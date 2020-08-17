@@ -1,18 +1,55 @@
-.task{
-    border: 1px solid black;
+.task {
+    box-shadow: 0px 0px 3px #403737;
     border-radius: 5px;
-    width: 350px;
+    width: 325px;
     height: 150px;
+    margin: 0px 15px 0px 0px;
+    padding: 0px 10px 0px 10px;
 
     &-tag {
-        height: 20px;
-        width: 80%;
-        margin: 0 10%;
-        border: 1px solid red;
+        width: 90%;
+        height: 30px;
+        margin: 0 5%;
+        border: 1px red;
         border-radius: 5px;
         background-color: red;
         position: relative;
-        bottom: 10px;
+        bottom: 15px;
+        box-shadow: 0px 0px 4px #948e8e;
+    
+    }
 
+    &-text-box {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 20% 20% 40%;
+    }
+
+    &-title {
+        font-weight: 500;
+    }
+
+    &-subtitle {
+        opacity: 0.5;
+    }
+
+    &-description {
+        display: grid;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px 0px 0px 0px;
+        font-size: 13px;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 100px){
+    .task {
+        box-shadow: 0px 0px 3px #403737;
+        border-radius: 5px;
+        width: 90vw;
+        height: 150px;
+        margin: 0px 15px 0px 0px;
+        padding: 0px 10px 0px 10px;
     }
 }

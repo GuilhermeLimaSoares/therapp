@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import './styles.scss';
 import './../../assets/styles/global.scss';
 
+import '../../assets/utils/index';
+
 export default function Sidebar(){
     return (
         <nav className="navigation">
